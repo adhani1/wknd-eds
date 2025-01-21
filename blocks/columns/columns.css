@@ -1,12 +1,17 @@
 .columns > div {
   display: flex;
   flex-direction: column;
+  background-color: #ebebeb;
 }
 
 .columns img {
-  width: 100%;
-}
+  height: 509px;
+  width: auto;
 
+}
+.columns div:first-child {
+  flex-grow: 1.7;
+}
 .columns > div > div {
   order: 1;
 }

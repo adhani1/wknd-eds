@@ -25,3 +25,19 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+.userlists li{
+  border: none !important;
+  text-align: center !important;
+}
+.userlists picture img{
+  width: 164px !important;
+  height: 164px !important;
+  border-radius: 100%;
+}
+.userlists ul ul{
+  list-style-type: none;
+  display: flex;
+  gap: 16px;
+  padding: 0;
+  justify-content: center;
+}
