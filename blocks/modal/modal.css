@@ -15,6 +15,7 @@ body.modal-open {
     max-height: calc(100dvh - (2 * var(--header-height)));
     padding: 0;
     border: 1px solid var(--dark-color);
+    background: #000;
   }
   
   .modal dialog .modal-content {
@@ -26,11 +27,12 @@ body.modal-open {
     padding: 24px;
     padding-top: 0;
     margin-top: 44px;
+    color: #fff;
   }
   
   @media (width >= 900px) {
     .modal dialog {
-      width: calc(100vw - 64px);
+      width: calc(40vw - 64px);
     }
     
     .modal dialog .modal-content {
@@ -51,7 +53,7 @@ body.modal-open {
     border-radius: 0;
     padding: 0;
     background-color: transparent;
-    color: var(--text-color);
+    color: #fff
     line-height: 0;
   }
   
@@ -83,3 +85,4 @@ body.modal-open {
   .modal dialog .section {
     padding: 0;
   }
+  

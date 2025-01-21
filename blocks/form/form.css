@@ -168,3 +168,26 @@
 .form .toggle-wrapper input:checked + .slider::before {
   transform: translateX(24px);
 }
+#form-headline{
+  border-bottom: 2px solid var(--brandPrimary, #ffea00);
+    content: "";
+    display: block;
+    padding-top: 8px;
+    width: 100px;
+}
+.form-field input{
+  border: 1px solid #ebebeb;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-size: var(--fontSizeSmall, 14px);
+  font-weight: var(--fontWeightSemiBold, 400);
+  height: 3pc;
+  padding: 2rem 1rem;
+  width: 100%;
+  background-color: #202020;
+    color: #fff;
+}
+.submit-wrapper{
+  border-bottom: 1px solid #4e4e4e;
+}
