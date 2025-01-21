@@ -40,6 +40,7 @@ async function loadFonts() {
   }
 }
 function autolinkModals(element) {
+  console.log(element)
   element.addEventListener('click', async (e) => {
     const origin = e.target.closest('a');
 

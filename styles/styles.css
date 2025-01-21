@@ -266,7 +266,7 @@ main .section.highlight {
   padding-top: 8px;
   width: 84px;
 }
-.carousel .button-container a,.columns .button-container a,.cards-container .button-container a{
+.carousel .button-container a,.columns .button-container a,.cards-container .button-container a,.submit-wrapper button{
   background-color:  #ffea00 !important;
   border-radius: 0 !important;
   color:  #202020 !important;
