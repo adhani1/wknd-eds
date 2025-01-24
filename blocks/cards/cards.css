@@ -8,14 +8,17 @@
 }
 
 .cards > ul > li {
-  border: 1px solid #dadada;
+  /* border: 1px solid #dadada; */
+  text-align: left;
   background-color: var(--background-color);
 }
 
-.cards .cards-card-body {
+/* .cards .cards-card-body {
   margin: 16px;
+} */
+.cards-card-body p:nth-child(2){
+  color: dimgray;
 }
-
 .cards .cards-card-image {
   line-height: 0;
 }
