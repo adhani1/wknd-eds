@@ -1,0 +1,66 @@
+
+#blockContent {
+    display: flex;
+    flex-wrap: wrap;  /* Allow wrapping to create multiple rows */
+    gap: 20px;        /* Space between cards */
+}
+
+/* Card styles */
+.card {
+    width: calc(25% - 20px);  /* Set width to 25% minus the gap */
+    border: none;  /* Light border around the card */
+    /* border-radius: 8px;      Rounded corners */
+    overflow: hidden;        /* Prevent content from overflowing */
+    /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); Add shadow for a floating effect */
+    background-color: #fff;
+    transition: transform 0.3s ease; /* Smooth hover transition */
+    cursor: pointer;
+}
+
+/* .card:hover {
+    transform: translateY(-5px);  /* Lift the card slightly on hover */
+} */
+
+/* Image styles */
+.card img {
+    width: 100%;  /* Make the image take full width of the card */
+    height: 200px; /* Fixed height for the image */
+    object-fit: cover; /* Ensure the image is cropped to fill the space */
+}
+
+/* Text container styles */
+/* .text-container {
+    padding: 10px;
+} */
+
+/* Title styles */
+.text-container h3 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #202020;
+}
+
+/* Description styles */
+.text-container p {
+    font-size: 1em;
+    color: dimgray;
+    margin-bottom: 0;
+}
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .card {
+        width: calc(33.33% - 20px); /* 3 cards per row on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: calc(50% - 20px); /* 2 cards per row on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .card {
+        width: 100%; /* 1 card per row on very small screens */
+    }
+}

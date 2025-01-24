@@ -16,7 +16,7 @@ header nav {
   gap: 0 24px;
   margin: auto;
   max-width: 1248px;
-  height: var(--nav-height);
+  height: 114px;
   padding: 0 24px;
   font-family: var(--body-font-family);
   box-shadow: 0 8px 20px 0 rgba(0, 0, 0, .26);
@@ -270,4 +270,31 @@ header nav .nav-tools {
 }
 header .button{
   all:unset !important
+}
+.header-top{
+  background: #000;
+  color: #fff;
+  text-align: right;
+  padding-right: 11pc;
+  font-size: 14px;
+}
+.header-top a{
+  all: unset;
+  cursor: pointer;
+}
+.header-top a:hover{
+  text-decoration: underline;
+}
+.header ul li{
+  font-size: var(--body-font-size-xs,14px);
+  font-family:  sans-serif;
+}
+@media (width <= 768px) {
+  .footer-nav .default-content-wrapper{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-nav .default-content-wrapper ul{
+    list-style: none;
+  }
 }

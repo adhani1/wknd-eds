@@ -28,11 +28,14 @@ footer .footer p {
     margin: 0;
     list-style-type: none !important;
 }
+footer .footer-nav  {
+  margin-bottom: 30px ;
+}
 }
 
 .footer-nav .default-content-wrapper{
   display: flex !important;
-  justify-content: space-between !important;
+  justify-content: space-between ;
   align-items: center !important;
 }
 .footer-nav div:first-child{
@@ -52,11 +55,33 @@ footer .footer p {
 .icon-wknd-logo-light{
   width: 128px;
   height: auto;
+  cursor: pointer;
 }
 footer .button{
   all:unset !important
 }
-footer li a,footer .footer-txt a{
+footer li a{
+  color: #fff !important;
+}
+footer .footer-txt a{
   color: #fff !important;
   text-decoration: underline !important;
+}
+@media (width <= 900px) {
+  .footer-nav .default-content-wrapper{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .footer-nav .default-content-wrapper li{
+    width: fit-content;
+  }
+  .footer-nav .default-content-wrapper ul{
+    padding: 0 !important;
+  }
+  .footer-nav .default-content-wrapper ul:nth-child(4){
+    display: flex;
+  }
+  .footer-nav .default-content-wrapper ul{
+    list-style: none;
+  }
 }

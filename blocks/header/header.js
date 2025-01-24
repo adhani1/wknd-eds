@@ -161,6 +161,13 @@ export default async function decorate(block) {
 
   const navWrapper = document.createElement('div');
   navWrapper.className = 'nav-wrapper';
+  const headerTop=document.createElement('div')
+  headerTop.classList.add('header-top')
+  const headerTopContent=document.createElement('a')
+  headerTopContent.textContent="SIGN IN"
+  headerTopContent.href="/modals/signin"
+  headerTop.appendChild(headerTopContent)
+  navWrapper.append(headerTop)
   navWrapper.append(nav);
   block.append(navWrapper);
 }
